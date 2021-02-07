@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחשבון נהיגה</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- javascript-->
+    <script type="text/javascript" src="assests/JQuery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assests/JQuery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="pelegHagaon.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <!-- opening screen -->
+    <div id="openingScreenBody">
+        <div id="containOpeningText">
+            <div id="website-title">
+                מחשבון
+            </div>
+            <div id="order">הוראה 3.6</div>
+            <div id="date">איזה תאריך לשים פה?</div>
+        </div>
+    </div>
+
+
+    <div id="everything">
+        <img src="assests/images/info.png" id="infoBtn" />
+        <div id="logos">
+            <img src="assests/images/till.png" class="logo" />
+            <img src="assests/images/bahad6.png" class="logo" />
+        </div>
+
+        <div id="contentAndTitle">
+            <div id="content" class="">
+                <div id="infoEnteringArea">
+                    <div class="content-title">מלא על פי נתוני הנהג</div>
+                    <div id="questions-container">
+                        <div class="question-container">
+                            <div class="catagory">קבוצת הרכב עליו ביצע הכשרה בעבר</div>
+                            <select class="selection" id="selectionOne">
+                                <option></option>
+                                <option class="nothing">לא ביצע הכשרה בעבר</option>
+                                <option class="passangener">נוסעים</option>
+                                <option class="B">רב הינע B</option>
+                                <option class="multi-C1">רב הינע C1</option>
+                                <option class="cargo-C1">משא קל</option>
+                                <option class="heavyCargo">משא כבד / משא כבד רב הינע / גרור תומך</option>
+                            </select>
+                        </div>
+                        <div class="question-container">
+                            <div class="catagory">סוג הרכב עליו ביצע הכשרה בעבר</div>
+                            <select class="selection" id="selectionTwo"></select>
+                        </div>
+                        <div class="question-container">
+                            <div class="catagory">קבוצת הרכב עליו עתיד לבצע הכשרה</div>
+                            <select class="selection" id="selectionThree"></select>
+                        </div>
+                        <div class="question-container">
+                            <div class="catagory">סוג הרכב עליו עתיד לבצע הכשרה</div>
+                            <select class="selection" id="selectionFour"></select>
+                        </div>
+                        <div class="line"></div>
+                        <div id="calculateBtn">חשב</div>
+                    </div>
+                </div>
+                <div id="resultArea" class="">
+                    <div class="content-title">סדר פעולות בחניכת נהג</div>
+                    <div class="results">
+                        
+                    </div>
+                    <!-- <div class="result-line">
+                        <img src="assests/images/wheel.png" alt="wheel" class="result-wheel">
+                        <div class="result-info"> הסבר על שלבי התהליך שבו מלמדים לנהוד ועוד פרטים רלוונטים שכאלה</div>
+                    </div>
+                    <div class="result-line">
+                        <img src="assests/images/wheel.png" alt="wheel" class="result-wheel">
+                        <div class="result-info"> הסבר על שלבי התהליך שבו מלמדים לנהוד ועוד פרטהסבר על שלבי התהליך שבו
+                            מלמדים לנהוד ועוד פרטהסבר על שלבי התהליך שבו מלמדים לנהוד ועוד פרטהסבר על שלבי התהליך שבו
+                            מלמדים לנהוד ועוד פרטהסבר על שלבי התהליך שבו מלמדים לנהוד ועוד פרטהסבר על שלבי התהליך שבו
+                            מלמדים לנהוד ועוד פרטים רלוונטים שכאלה</div>
+                    </div> -->
+                </div>
+
+            </div>
+            <div class="title-new-driver">
+                <span>מחשבון</span>
+                <span style="color: rgb(231, 170, 36);">נהג חדש</span>
+                <span>ביחידה הוראה 3.6</span>
+            </div>
+        </div>
+
+        <!-- <div id="aboutAndTitle">
+            <div id="aboutContainer" class="">
+                <div class="content-title">אודות</div>
+                <div class="line"></div>
+                <div id="about-text">
+                    <p><b>רמ"ד טי"ל</b> : רס"ן מיגל לויתן.</p>
+
+                    <p><b>ניהול ובקרת התהליך</b>: רס"ר שרי חזי.</p>
+                    <p><b>אפיון</b>: רב"ט רוני מיליקובסקי.</p>
+                    <p><b>הפקה</b>: טור' צליל עמר.</p>
+                    <p><b>עיצוב</b>: רב"ט דנה בן שימול, סמ"ר אלדר פריג', טור' צליל עמר וטור' פלג ברנדוין.</p>
+                    <p><b>תכנות</b>: טור' צליל עמר.</p>
+                    <p><b>מומחה תוכן בה"ד </b>6: רס"ם יוסי אלוני.</p>
+                    <p><b>גרסה</b>: 1.0 2019</p>
+                    <p><b>מעודכן לתאריך: 01.06.2017 </b></p>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+
+    </div>
+</body>
+
+
+</html>
