@@ -1,3 +1,4 @@
+//מערך של שילובי משפטים נפוצים
 let commonExtras = [
     {
         //0
@@ -77,12 +78,11 @@ let commonExtras = [
         genericSentences: [0, 1, 2, 4]
     }
 ]
-
+//הפונקציה שמשלבת 2 או יותר איברים מcommonExtras
 function combineExtras(...extras) {
     let obj = {text: "", genericSentences: []};
     for (let extra of extras) {
         if (extra.text) {
-            console.log(extra.text)
             obj.text += extra.text + "\n";
         }
         if (extra.genericSentences)
@@ -91,6 +91,8 @@ function combineExtras(...extras) {
     return obj;
 }
 
+//המערך שמכניסים אליו את המשפטים שצריכים להתווסף. 
+//יש דרגות של קלאסים לפי סדר הבחירה, צריך לגשת לכל קלאס ולשים בו את המשפטים שצריכים להיות בו. אם בקלאס ראשוני (למשל נוסעים) יש משפטים שמופיעים בכל התתי קלאסים שלה (כלומר אוטומט וידני) אפשר להוסיף את האקסטרה לקלאס הראשי במקום לכל תת קלאס בנפרד
 let extras = {
     "nothing": {
         "initial": {
@@ -1580,6 +1582,7 @@ let extras = {
         }
     }
 }
+//מערך של משפטים שמופיעים הרבה
 let genericSentences = [
     'נהג יבצע הכשרה שברשותו רישיון נהיגה אזרחי ורישיון נהיגה צבאי (זמני/קבוע) החתום ע"י ק. הבב"ד המתאים לסוג הרכב עליו עתיד לבצע חניכה',
     'החניכה תחל בנסיעה בת שעה לפחות בכביש יום (ציר אספלט)',

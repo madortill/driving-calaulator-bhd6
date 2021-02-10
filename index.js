@@ -1,7 +1,3 @@
-// {
-//     firstSelection: "",
-//     secondSelectionOptions: ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",]
-// },
 const TOP_SELECTIONS = [{
         firstSelection: "",
         secondSelectionOptions: [""]
@@ -388,17 +384,15 @@ function onCalculateBtnClick() {
         $("#content").addClass("show-result");
         $("#content").css("flex-direction", "row");
         let lines =  getSentences(...Array.from($("option:selected")).map(el => el.className));
-        console.log(lines);
         //adds an element for each line that needs to appear to the resaults board
         for(let i = 0; i < lines.length; i++) {
             $(".results").append('<div class="result-line"><img src="assests/images/wheel.png" alt="wheel" class="result-wheel"> <div class="result-info"> '+lines[i]+'</div></div>');
         }
     }
-
     //Calculating and displaying the results
-    
 }
 
+//הפונקציות שמוצאות את המשפטים שצריכים להופיע
 function getSentences(...answers) {
     let extraSentences = [];
     let extrasObject = extras;
@@ -407,7 +401,6 @@ function getSentences(...answers) {
             extraSentences.push(extrasObject[answer].extra)
         extrasObject = extrasObject[answer];
     }
-
 
     let answer = [];
 
