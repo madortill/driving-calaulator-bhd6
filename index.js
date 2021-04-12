@@ -251,7 +251,7 @@ var isAboutDisplayed = false;
 var option; //Var for an option in a selection box
 
 // The html from the content div
-const CONTENT_ELEMENT = '<div id="infoEnteringArea"><div class="content-title">מלא על פי נתוני הנהג</div><div id="questions-container"><div class="question-container"><div class="catagory">קבוצת הרכב עליו ביצע הכשרה בעבר</div><select class="selection" id="selectionOne"><option></option><option>לא ביצע הכשרה בעבר</option><option>נוסעים</option><option>רב הינע B</option><option>רב הינע C1</option><option>משא קל</option><option>משא כבד / משא כבד רב הינע / גרור תומך</option><option>אוטובוס</option></select></div><div class="question-container"><div class="catagory">סוג הרכב עליו ביצע הכשרה בעבר</div><select class="selection" id="selectionTwo"></select></div><div class="question-container"><div class="catagory">קבוצת הרכב עליו עתיד לבצע הכשרה</div><select class="selection" id="selectionThree"></select></div><div class="question-container"><div class="catagory">סוג הרכב עליו עתיד לבצע הכשרה</div><select class="selection" id="selectionFour"></select></div><div class="line"></div><div id="calculateBtn">חשב</div></div></div><div id="resultArea" class=""><div class="content-title">סדר פעולות בחניכת נהג</div><div class="result-line"><img src="assests/images/wheel.png" alt="wheel" class="result-wheel"><div class="result-info"> הסבר על שלבי התהליך שבו מלמדים לנהוד ועוד פרטים רלוונטים שכאלה</div></div><div class="result-line"><img src="assests/images/wheel.png" alt="wheel" class="result-wheel"><div class="result-info"> הסבר הסברי שכזה </div></div></div>'
+const CONTENT_ELEMENT = '<div id="infoEnteringArea"><div class="content-title">מלא על פי נתוני הנהג</div><div id="questions-container"><div class="question-container"><div class="catagory">קבוצת הרכב עליו ביצע הכשרה בעבר</div><select class="selection" id="selectionOne"><option></option><option>לא ביצע הכשרה בעבר</option><option>נוסעים</option><option>רב הינע B</option><option>רב הינע C1</option><option>משא קל</option><option>משא כבד / משא כבד רב הינע / גרור תומך</option><option>אוטובוס</option></select></div><div class="question-container"><div class="catagory">סוג הרכב עליו ביצע הכשרה בעבר</div><select class="selection" id="selectionTwo"></select></div><div class="question-container"><div class="catagory">קבוצת הרכב עליו עתיד לבצע הכשרה</div><select class="selection" id="selectionThree"></select></div><div class="question-container"><div class="catagory">סוג הרכב עליו עתיד לבצע הכשרה</div><select class="selection" id="selectionFour"></select></div><div class="line"></div><div id="calculateBtn">חשב</div></div></div><div id="resultArea" class=""><div class="content-title">סדר פעולות בחניכת נהג</div><div class="result-line"><img src="assests/images/wheel.png" alt="wheel" class="result-wheel"></div><div class="result-line"><img src="assests/images/wheel.png" alt="wheel" class="result-wheel"></div></div>'
 var resultLine = '<div class="result-line"><img src="assests/images/wheel.png" alt="wheel" class="result-wheel"><div class="result-info"></div></div>';
 
 $(function () {
@@ -259,10 +259,6 @@ $(function () {
     document.querySelector("#confirm-btn").addEventListener ("click", function() {
         $("#openingScreenBody").fadeOut(800);
     });
-
-    // setTimeout(function () {
-    //     // $("#openingScreenBody").fadeOut(800);
-    // }, 2000);
 
     //Adding listener to the butttons
     $("#infoBtn").on("click", onInfoClick);
