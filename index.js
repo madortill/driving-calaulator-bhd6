@@ -104,7 +104,8 @@ const TOP_SELECTIONS = [{
             "טטרה",
             "FMTV",
             "משאית תובלתית כבדה מעל 12 טון (פריטליינר וכו')",
-            "גרור - תומך"
+            "גרור - תומך",
+            "מאן מעל 12 טון"
         ], classes: [
             "heavyCargo",
             "",
@@ -113,7 +114,8 @@ const TOP_SELECTIONS = [{
             "tetra",
             "FMTV",
             "truk",
-            "dragger"
+            "dragger",
+            "man+"
         ] 
     },
     {
@@ -224,7 +226,8 @@ const BOTTOM_SELECTIONS = [{
             "טטרה",
             "FMTV",
             "משאית תובלתית כבדה מעל 12 טון (פריטליינר וכו')",
-            "גרור - תומך"
+            "גרור - תומך",
+            "מאן מעל 12 טון"
         ], classes: [
             "heavyCargo",
             "",
@@ -233,7 +236,8 @@ const BOTTOM_SELECTIONS = [{
             "tetra",
             "FMTV",
             "truk",
-            "dragger"
+            "dragger",
+            "man+"
         ] 
     },
     {
