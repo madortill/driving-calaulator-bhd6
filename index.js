@@ -256,9 +256,13 @@ var resultLine = '<div class="result-line"><img src="assests/images/wheel.png" a
 
 $(function () {
     // Making opening screen fade out
-    setTimeout(function () {
+    document.querySelector("#confirm-btn").addEventListener ("click", function() {
         $("#openingScreenBody").fadeOut(800);
-    }, 2000);
+    });
+
+    // setTimeout(function () {
+    //     // $("#openingScreenBody").fadeOut(800);
+    // }, 2000);
 
     //Adding listener to the butttons
     $("#infoBtn").on("click", onInfoClick);
