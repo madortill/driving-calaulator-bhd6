@@ -103,16 +103,17 @@ body {
     font-weight: 500;
 }
 
-#website-title::after {
+/* #website-title::after {
     content: "נהג חדש";
     color: var(--new-driver-orange);
-}
+} */
 
 #order {
     height: fit-content;
     font-size: 9vmin;
     margin-bottom: 10%;
     font-weight: 500;
+    color:rgb(231, 169, 35);
 }
 
 #date {
