@@ -675,7 +675,7 @@ let extras = {
                 },
                 "colorado4X4": {
                     "extra": {
-                        "text": "הכרת הרכב ומבחן שליטה"
+                        "text": "מבחן שליטה בלבד"
                     }
                 }
             },
@@ -740,7 +740,7 @@ let extras = {
                 },
                 "colorado4X4": {
                     "extra": {
-                        "text": "הכרת הרכב ומבחן שליטה"
+                        "text": "מבחן שליטה בלבד"
                     }
                 }
             },
@@ -971,14 +971,53 @@ let extras = {
                 "extra": commonExtras[2],
                 "dodge1500": {
                     "extra": {
-                        genericSentences: [1,8]                        
+                        genericSentences: [1,8,0, 2, 4],
+                        "text": "שעת חניכה בכביש יום"           
                     }
                 },
                 "defender": {
                     "extra": {
-                        genericSentences: [1,3,8],
-                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבלנ"ם יבצע מבחן שליטה בלבד'
+                        genericSentences: [1,3,8,0, 2, 4],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבלנ"ם יבצע מבחן שליטה בלבד',
+                        "text": "שעת חניכה בכביש יום" 
                     }
+                },
+                "wrengler": {
+                    "extra": commonExtras[2]
+                },
+                "S4": {
+                    "extra": commonExtras[2]
+                },
+                "S3": {
+                    "extra": commonExtras[2]
+                },
+                "paj": {
+                    "extra": commonExtras[2]
+                },
+                "wrengler": {
+                    "extra": commonExtras[2]
+                },
+                "T4X4": {
+                    "extra": {
+                        "text": "מבחן שליטה בלבד"
+                    }
+                },
+                "D4X4": {
+                    "extra": {
+                        "text": "מבחן שליטה בלבד"
+                    }
+                },
+                "ford150": {
+                    "extra": commonExtras[2]
+                },
+                "dodge1500": {
+                    "extra": commonExtras[2]
+                },
+                "defender": {
+                    "extra": commonExtras[2]
+                },
+                "David": {
+                    "extra": commonExtras[2]
                 }
             },
             "multi-C1": {
