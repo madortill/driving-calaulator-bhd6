@@ -203,6 +203,9 @@ let extras = {
                         genericSentences: [8],
                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב בבלנ"ם יבצע מבחן שליטה בלבד'
                     }
+                },
+                "hammer": {
+                    "extra": commonExtras [9]
                 }
             },
             "cargo-C1": {
@@ -1448,7 +1451,27 @@ let extras = {
                 "extra": commonExtras[2]
             },
             "heavyCargo": {
-                "extra": commonExtras[2]
+                "oosh": {
+                    "extra": commonExtras[0]
+                },
+                "rio": {
+                    "extra": commonExtras[2]
+                },
+                "tetra": {
+                    "extra": commonExtras[2]
+                },
+                "FMTV": {
+                    "extra": commonExtras[2]
+                },
+                "truk": {
+                    "extra": commonExtras[2]
+                },
+                "dragger": {
+                    "extra": commonExtras[2]
+                },
+                "man+": {
+                    "extra": commonExtras[2]
+                }
             },
             "bus": {
                 "extra": commonExtras[11]
