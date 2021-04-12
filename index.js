@@ -84,13 +84,15 @@ const TOP_SELECTIONS = [{
             "",
             "אינטר 4700",
             "פורד אינטר 550",
-            "מאן עד 12 טון"
+            "מאן עד 12 טון",
+            "משאית דאף"
         ], classes: [
             "cargo-C1",
             "",
             "inter",
             "fordInter",
-            "man"
+            "man",
+            "daf"
         ] 
     },
     {
@@ -202,13 +204,15 @@ const BOTTOM_SELECTIONS = [{
             "",
             "אינטר 4700",
             "פורד אינטר 550",
-            "מאן עד 12 טון"
+            "מאן עד 12 טון",
+            "משאית דאף"
         ], classes: [
             "cargo-C1",
             "",
             "inter",
             "fordInter",
-            "man"
+            "man",
+            "daf"
         ] 
     },
     {
