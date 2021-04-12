@@ -307,9 +307,16 @@ let extras = {
         },
         "menual": {
             "passangener": {
-                "extra": {
-                    genericSentences: [7],
-                    "text": "הכרת הרכב בלבד"
+                "auto": {
+                    "extra": {
+                        genericSentences: [7],
+                        "text": "הכרת הרכב בלבד"
+                    }
+                },
+                "menual": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
                 }
             },
             "B": {
