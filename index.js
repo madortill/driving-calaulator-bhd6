@@ -405,7 +405,7 @@ function getSentences(...answers) {
     let extraSentences = [];
     let extrasObject = extras;
     for (let answer of answers) {
-        if (extrasObject[answer] && extrasObject[answer].extra)
+        if (extrasObject[answer] !== undefined && extrasObject[answer].extra)
             extraSentences.push(extrasObject[answer].extra)
         extrasObject = extrasObject[answer];
     }
