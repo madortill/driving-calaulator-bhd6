@@ -192,66 +192,240 @@ let extras = {
                     "text": "שעתיים כביש יום, שעתיים כביש לילה, שעתיים שטח יום, שעה שטח לילה",
                     genericSentences: [3,5,6,11]
                 },
-                "wrengler": {
+                "TH4X4": {
                     "extra": {
-                    }
-                },
-                "S4": {
-                    "extra": {
-                        genericSentences: [5]
-                    }
-                },
-                "S3": {
-                    "extra": {
-                        genericSentences: [5]
-                    }
-                },
-                "paj": {
-                    "extra": {
-                        genericSentences: [5]
+                        genericSentences: [8]
                     }
                 },
                 "T4X4": {
                     "extra": {
-                        genericSentences: [5]
+                        genericSentences: [8]
                     }
                 },
                 "D4X4": {
                     "extra": {
-                        genericSentences: [5]
+                        genericSentences: [8]
                     }
                 },
-                "ford150": {
+                "sunyang": {
                     "extra": {
-                        genericSentences: [5]
+                        genericSentences: [8]
                     }
                 },
-                "dodge1500": {
+                "volkswagen": {
                     "extra": {
-                        genericSentences: [5]
+                        genericSentences: [8]
                     }
                 },
-                "defender": {
+                "davidAuto": {
                     "extra": {
-                        genericSentences: [5, 8],
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבלנ"ם יבצע מבחן שליטה בלבד'
                     }
                 },
-                "David": {
+                "davidManual": {
                     "extra": {
-                        genericSentences: [5, 8],
+                        genericSentences: [9],
                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבלנ"ם יבצע מבחן שליטה בלבד'
                     }
                 },
                 "colorado4X4": {
                     "extra": {
-                        genericSentences: [5]
+                        genericSentences: [8]
+                    }
+                },
+                "silveradoB4X4": {
+                    "extra": {
+                        genericSentences: [8]
                     }
                 }
             },
             "multi-C1": {
                 "extra": {
-                    genericSentences: [5],
+                    genericSentences: [3,5,6],
                     "text": "3 שעות כביש יום, 3 שעות כביש לילה, שעתיים שטח יום, שעתיים שטח לילה"
+                },
+                "dodge3500": {
+                    "extra": {
+                        genericSentences: [11],
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "hammer": {
+                    "extra": {
+                        genericSentences: [9,11],
+                        "text": "במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        genericSentences: [11],
+                        "text": "במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "wolf1": {
+                    "extra": {
+                        genericSentences: [9,11],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf2": {
+                    "extra": {
+                        genericSentences: [9,11],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9,11],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "sprinter": {
+                    "extra": {
+                        genericSentences: [11],
+                    }
+                },
+                "silverado": {
+                    "extra": {
+                        genericSentences: [11],
+                    }
+                },
+
+            },
+            "cargo-C1": {
+                "extra": {
+                    genericSentences: [3,5,6,11],
+                    "text": "7 שעות כביש יום, 3 שעות כביש לילה"
+                }
+            },
+            "heavyCargo": {
+                "extra": {
+                    genericSentences: [3,5,6],
+                    "text": "37 שעות כביש יום, 3 שעות כביש לילה"
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9,11],
+                        "text": "במידה ונדרשת לבצע הכשרה על אושקוש מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד"
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9,11],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                        genericSentences: [9,11],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                        genericSentences: [9,11],
+                    }
+                },
+                "truk": {
+                    "extra": {
+                        genericSentences: [10],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9,11],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "dragger ": {
+                    "extra": {
+                        genericSentences: [10],
+                    }
+                },
+                
+            },
+            "bus": {
+                "extra": {
+                    genericSentences: [3,5,6,9,10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
+            }
+        }
+    },
+    "passangener": {
+        "extra": {
+            genericSentences: [0, 1, 2, 5],
+        },
+        "auto": {
+            "passangener": {
+                "auto": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
+                },
+                "menual": {
+                    "extra": {
+                        genericSentences: [10],
+                        "text": "שעת חניכה בכביש יום"
+                    }
+                }
+            },
+            "B": {
+                "extra": {
+                    genericSentences: [3,11],
+                    "text": "6 שעות כביש (יום/לילה), שעה שטח (יום/לילה)"
+                },
+                "TH4X4": {
+                    "extra": {
+                        genericSentences: [8]
+                    }
+                },
+                "D4X4": {
+                    "extra": {
+                        genericSentences: [8]
+                    }
+                },
+                "T4X4": {
+                    "extra": {
+                        genericSentences: [8]
+                    }
+                },
+                "sunyang": {
+                    "extra": {
+                        genericSentences: [8]
+                    }
+                },
+                "volkswagen": {
+                    "extra": {
+                        genericSentences: [8]
+                    }
+                },
+                "davidAuto": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "davidManual": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "colorado4X4": {
+                    "extra": {
+                        genericSentences: [8]
+                    }
+                },
+                "silveradoB4X4": {
+                    "extra": {
+                        genericSentences: [8]
+                    }
+                },
+            },
+            "multi-C1": {
+                "extra": {
+                    genericSentences: [3,11],
+                    "text": "9  שעות כביש (יום/לילה), שעה שטח (יום/לילה)"
                 },
                 "dodge3500": {
                     "extra": {
@@ -260,122 +434,91 @@ let extras = {
                 },
                 "ford350": {
                     "extra": {
-                        "text": "במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
-                    }
-                },
-                "wolf1": {
-                    "extra": {
-                        genericSentences: [8],
-                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב בבלנ"ם יבצע מבחן שליטה בלבד'
-                    }
-                },
-                "wolf2": {
-                    "extra": {
-                        genericSentences: [8],
-                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב בבלנ"ם יבצע מבחן שליטה בלבד'
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
                     }
                 },
                 "hammer": {
-                    "extra": commonExtras [9]
-                }
-            },
-            "cargo-C1": {
-                "extra": {
-                    genericSentences: [5],
-                    "text": "7 שעות כביש יום, 3 שעות כביש לילה"
-                }
-            },
-            "heavyCargo": {
-                "extra": {
-                    genericSentences: [5],
-                    "text": "40 שעות כביש יום, 10 שעות כביש לילה"
-                },
-                "oosh": {
                     "extra": {
-                        "text": "במידה ונדרשת לבצע הכשרה על אושקוש מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד"
-                    }
-                }
-            },
-            "bus": {
-                "extra": {
-                    genericSentences: [5],
-                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
-                }
-            }
-        }
-    },
-    "passangener": {
-        "auto": {
-            "passangener": {
-                "auto": {
-                    "extra": {
-                        genericSentences: [7],
-                        "text": "הכרת הרכב בלבד"
-                    }
-                },
-                "menual": {
-                    "extra": {
-                        genericSentences: [0, 2, 4],
-                        "text": "שעת חניכה בכביש יום"
-                    }
-                }
-            },
-            "B": {
-                "extra": {
-                    genericSentences: [1, 3, 0, 2, 4],
-                    "text": "6 שעות כביש (יום/לילה), שעה שטח (יום/לילה)"
-                },
-                "defender": {
-                    "extra": {
-                        genericSentences: [8]
-                    }
-                },
-                "David": {
-                    "extra": {
-                        genericSentences: [8]
-                    }
-                },
-            },
-            "multi-C1": {
-                "extra": {
-                    genericSentences: [1, 3, 0, 2, 4],
-                    "text": "9  שעות כביש (יום/לילה), שעה שטח (יום/לילה)"
-                },
-                "hammer": {
-                    "extra": {
-                        genericSentences: [8],
                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר בבלנ"ם יבצע מבחן שליטה בלבד'
                     }
                 },
                 "wolf1": {
                     "extra": {
-                        genericSentences: [8],
+                        genericSentences: [9],
                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב בבלנ"ם יבצע מבחן שליטה בלבד'
                     }
                 },
                 "wolf2": {
                     "extra": {
-                        genericSentences: [8],
+                        genericSentences: [9],
                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב בבלנ"ם יבצע מבחן שליטה בלבד'
                     }
-                }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
             },
             "cargo-C1": {
                 "extra": {
-                    genericSentences: [1, 3, 0, 2, 4],
+                    genericSentences: [3, 10],
                     "text": "10 שעות כביש (יום/לילה)"
-                }
+                },
             },
             "heavyCargo": {
                 "extra": {
-                    genericSentences: [1, 3, 0, 2, 4],
+                    genericSentences: [3],
                     "text": "50 שעות כביש יום/לילה"
-                }
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9,11],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד <br> 39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9,11],
+                        "text": "39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)"
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                        genericSentences: [9,11],
+                        "text": "39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)"
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                        genericSentences: [9,11],
+                        "text": "39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)"
+                    }
+                },
+                "truk": {
+                    "extra": {
+                        genericSentences: [10],
+                        "text": "40 שעות כביש (יום/לילה)"
+                    }
+                },
+                "dragger": {
+                    "extra": {
+                        genericSentences: [10],
+                        "text": "40 שעות כביש (יום/לילה)"
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9,11],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד <br> 39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)',
+                    }
+                },
             },
             "bus": {
                 "extra": {
-                    genericSentences: [1, 0, 2, 4],
-                    "text": "4 שעות כביש יום, שעת כביש לילה<br> במידה ונדרש לנהוג על אוטובוס אחר תבוצע הכרת הרכב בלבד"
+                    genericSentences: [3, 10],
+                    "text": " במידה ונדרש לנהוג על אוטובוס אחר תבוצע הכרת הרכב בלבד <br> 4 שעות כביש יום, שעת כביש לילה",
                 }
             }
         },
@@ -383,7 +526,7 @@ let extras = {
             "passangener": {
                 "auto": {
                     "extra": {
-                        genericSentences: [7],
+                        genericSentences: [3,11],
                         "text": "הכרת הרכב בלבד"
                     }
                 },
@@ -395,59 +538,149 @@ let extras = {
             },
             "B": {
                 "extra": {
-                    genericSentences: [0, 1, 2, 3, 4],
+                    genericSentences: [3, 11],
                     "text": "6 שעות כביש (יום/לילה), שעה שטח (יום/לילה)"
                 },
-                "defender": {
+                "TH4X4": {
                     "extra": {
                         genericSentences: [8]
                     }
                 },
-                "David": {
+                "D4X4": {
                     "extra": {
                         genericSentences: [8],
+                    }
+                },
+                "T4X4": {
+                    "extra": {
+                        genericSentences: [8],
+                    }
+                },
+                "sunyang": {
+                    "extra": {
+                        genericSentences: [8],
+                    }
+                },
+                "volkswagen": {
+                    "extra": {
+                        genericSentences: [8],
+                    }
+                },
+                "davidAuto": {
+                    "extra": {
+                        genericSentences: [9],
                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבלנ"ם יבצע מבחן שליטה בלבד'
                     }
-                }
+                },
+                "davidManual": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "colorado4X4": {
+                    "extra": {
+                        genericSentences: [8],
+                    }
+                },
+                "silveradoB4X4": {
+                    "extra": {
+                        genericSentences: [8],
+                    }
+                },
             },
             "multi-C1": {
                 "extra": {
-                    genericSentences: [0, 1, 2, 3, 4],
+                    genericSentences: [0, 1, 2, 3, 5, 11],
                     "text": "9 שעות כביש (יום/לילה), שעה שטח (יום/לילה)"
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "ford350" : {
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
                 },
                 "hammer": {
                     "extra": {
-                        genericSentences: [8],
                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר בבלנ"ם יבצע מבחן שליטה בלבד'
                     }
                 },
                 "wolf1": {
                     "extra": {
-                        genericSentences: [8],
                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב בבלנ"ם יבצע מבחן שליטה בלבד'
                     }
                 },
                 "wolf2": {
                     "extra": {
-                        genericSentences: [8]
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב בבלנ"ם יבצע מבחן שליטה בלבד'
                     }
                 }
             },
             "cargo-C1": {
                 "extra": {
-                    genericSentences: [0, 1, 2, 3, 4 ],
+                    genericSentences: [3, 10 ],
                     "text": "10 שעות כביש (יום/לילה)"
                 }
             },
             "heavyCargo": {
                 "extra": {
-                    genericSentences: [0, 1, 2, 3, 4],
-                    "text": "50 שעות כביש יום/לילה"
-                }
+                    genericSentences: [3],
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9,11],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד <br> 39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9,11],
+                         "text": "39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)"
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9,11],
+                         "text": "39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)"
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9,11],
+                         "text": "39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)"
+                    }
+                },
+                "truk": {
+                    "extra": {
+                         genericSentences: [10],
+                         "text": "40 שעות כביש (יום/לילה)"
+                    }
+                },
+                "dragger": {
+                    "extra": {
+                          genericSentences: [10],
+                         "text": "40 שעות כביש (יום/לילה)"
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9,11],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד <br> 40 שעות כביש (יום/לילה)',
+                    }
+                },
             },
             "bus": {
                 "extra": {
-                    genericSentences: [0, 1, 2, 3, 4],
+                    genericSentences: [3, 10],
                     "text": "4 שעות כביש יום, שעת כביש לילה<br> במידה ונדרש לנהוג על אוטובוס אחר תבוצע הכרת הרכב בלבד"
                 }
             }

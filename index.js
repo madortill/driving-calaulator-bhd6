@@ -41,8 +41,7 @@ const TOP_SELECTIONS = [{
             "דימקס 4X4",
             "טריטון 4X4",
             "סאניאנג מוסו",
-            "פולקסווגן", 
-            "אמארוק",
+            "פולקסווגן אמארוק", 
             "פורד F-150",
             "דודג' 1500",
             "דיפנדר",
@@ -64,12 +63,14 @@ const TOP_SELECTIONS = [{
             "D4X4",
             "T4X4",
             "sunyang",
-            "",
+            "volkswagen",
             "ford150",
             "dodge1500",
             "defender",
-            "David",
+            "davidAuto",
+            "davidManual",
             "colorado4X4",
+            "silveradoB4X4"
         ] 
     },
     {
@@ -85,14 +86,16 @@ const TOP_SELECTIONS = [{
             "סילברדו 4X4 C1",
             "טיגריס"
         ], classes: [
-            "mulyi-C1",
+            "multi-C1",
             "",
             "dodge3500",
             "ford350",
             "hammer",
             "wolf1",
             "wolf2",
-            "sprinter"
+            "sprinter",
+            "silverado",
+            "tigris"
         ] 
     },
     {
@@ -180,8 +183,7 @@ const BOTTOM_SELECTIONS = [{
             "דימקס 4X4",
             "טריטון 4X4",
             "סאניאנג מוסו",
-            "פולקסווגן", 
-            "אמארוק",
+            "פולקסווגן אמארוק", 
             "פורד F-150",
             "דודג' 1500",
             "דיפנדר",
@@ -193,16 +195,24 @@ const BOTTOM_SELECTIONS = [{
             "B",
             "",
             "wrengler",
+            "rubikon",
             "S4",
             "S3",
             "paj",
-            "T4X4",
+            "TLK",
+            "rekston",
+            "TH4X4",
             "D4X4",
+            "T4X4",
+            "sunyang",
+            "volkswagen",
             "ford150",
             "dodge1500",
             "defender",
-            "David",
+            "davidAuto",
+            "davidManual",
             "colorado4X4",
+            "silveradoB4X4"
         ] 
     },
     {
@@ -225,7 +235,9 @@ const BOTTOM_SELECTIONS = [{
             "hammer",
             "wolf1",
             "wolf2",
-            "sprinter"
+            "sprinter",
+            "silverado",
+            "tigris"
         ] 
     },
     {
