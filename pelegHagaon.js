@@ -6,12 +6,11 @@ let commonExtras = [
     },
     {
         //1
-        genericSentences: [7]
+        "text": "שעת חניכה בכביש יום",
     },
     {
         //2
-        "text": "שעת חניכה בכביש יום",
-        genericSentences: [0, 2, 4]
+        genericSentences: [0, 1, 2, 5, 10]
     },
     {
         //3
@@ -20,11 +19,11 @@ let commonExtras = [
     },
     {
         //4
-        "text": " שעות כביש (יום/לילה)"
+        genericSentences: [8]
     },
     {
         //5
-        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבלנ"ם יבצע מבחן שליטה בלבד'
+        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
     },
     {
         //6
@@ -610,16 +609,18 @@ let extras = {
         "wrengler": {
             "passangener": {
                 "auto": {
-                    "text": "הכרת הרכב בלבד"
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
                 },
                 "menual": {
                     "extra": {
-                        genericSentences: [10],
+                        genericSentences: [0, 1, 2, 5, 10],
                         "text": "שעת חניכה בכביש יום"
                     } 
                 }
             },
-            "B": {  
+            "B": { 
                 "rubikon": {
                     "extra": commonExtras[0]
                 },
@@ -630,562 +631,2457 @@ let extras = {
                     "extra": commonExtras[0]
                 },
                 "paj": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "T4X4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "D4X4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "ford150": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "dodge1500": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "defender": {
-                    "extra": combineExtras(commonExtras[3], commonExtras[12])
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
-                "David": {
-                    "extra": combineExtras(commonExtras[3], commonExtras[12], commonExtras[5])
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
                 },
                 "colorado4X4": {
-                    "extra": commonExtras[2]
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 }
             },
             "multi-C1": {
-                "extra": commonExtras[6],
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
                 "hammer": {
-                    "extra": commonExtras[9]
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf1": {
-                    "extra": combineExtras(commonExtras[7], commonExtras[8])
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf2": {
-                    "extra": commonExtras[7]
-                }
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
             },
             "cargo-C1": {
-                "extra": commonExtras[6]
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
             },
             "heavyCargo": {
-                "extra": commonExtras[10]
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
             },
             "bus": {
-                "extra": commonExtras[11]
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
+            }
+        },
+        "rubikon": {
+            "passangener": {
+                "auto": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
+                },
+                "menual": {
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
+                }
+            },
+            "B": { 
+                "wrengler": {
+                    "extra": commonExtras[0]
+                },
+                "S4": {
+                    "extra": commonExtras[0]
+                },
+                "S3": {
+                    "extra": commonExtras[0]
+                },
+                "paj": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "T4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "D4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "ford150": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "dodge1500": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "defender": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "colorado4X4": {
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                }
+            },
+            "multi-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
+                "hammer": {
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf1": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf2": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+            },
+            "cargo-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
+            },
+            "heavyCargo": {
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
+            },
+            "bus": {
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
             }
         },
         "S4": {
             "passangener": {
                 "auto": {
-                    "extra": combineExtras(commonExtras[0], commonExtras[1])
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
                 },
                 "menual": {
-                    "extra": commonExtras[2]
-
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
                 }
             },
-            "B": {
+            "B": { 
                 "wrengler": {
+                    "extra": commonExtras[0]
+                },
+                "rubikon": {
                     "extra": commonExtras[0]
                 },
                 "S3": {
                     "extra": commonExtras[0]
                 },
                 "paj": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "T4X4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "D4X4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "ford150": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "dodge1500": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "defender": {
-                    "extra":combineExtras(commonExtras[2], commonExtras[7])
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
-                "David": {
-                    "extra": combineExtras(commonExtras[2], commonExtras[12], commonExtras[7], commonExtras[5])
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
                 },
                 "colorado4X4": {
-                    "extra": commonExtras[2]
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 }
             },
             "multi-C1": {
-                "extra": commonExtras[6],
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
                 "hammer": {
-                    "extra": commonExtras[9]
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf1": {
-                    "extra": combineExtras(commonExtras[7], commonExtras[8])
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf2": {
-                    "extra": commonExtras[7]
-                }
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
             },
             "cargo-C1": {
-                "extra": commonExtras[6]
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
             },
             "heavyCargo": {
-                "extra": commonExtras[10]
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
             },
             "bus": {
-                "extra": commonExtras[11]
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
             }
         },
         "S3": {
             "passangener": {
                 "auto": {
-                    "extra": combineExtras(commonExtras[0], commonExtras[1])
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
                 },
                 "menual": {
-                    "extra": commonExtras[2]
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
                 }
             },
-            "B": {
+            "B": { 
                 "wrengler": {
+                    "extra": commonExtras[0]
+                },
+                "rubikon": {
                     "extra": commonExtras[0]
                 },
                 "S4": {
                     "extra": commonExtras[0]
                 },
                 "paj": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "T4X4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "D4X4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "ford150": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "dodge1500": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "defender": {
-                    "extra": combineExtras(commonExtras[2], commonExtras[7])
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
-                "David": {
-                    "extra": combineExtras(commonExtras[2], commonExtras[7], commonExtras[5])
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
                 },
                 "colorado4X4": {
-                    "extra": commonExtras[2]
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 }
             },
             "multi-C1": {
-                "extra": commonExtras[6],
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
                 "hammer": {
-                    "extra": commonExtras[9]
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf1": {
-                    "extra": combineExtras(commonExtras[7], commonExtras[8])
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf2": {
-                    "extra": commonExtras[7]
-                }
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
             },
             "cargo-C1": {
-                "extra": commonExtras[6]
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
             },
             "heavyCargo": {
-                "extra": commonExtras[10]
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
             },
             "bus": {
-                "extra": commonExtras[11]
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
             }
         },
         "paj": {
             "passangener": {
                 "auto": {
-                    "extra": combineExtras(commonExtras[0], commonExtras[1])
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
                 },
                 "menual": {
-                    "extra": commonExtras[2]
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
                 }
             },
-            "B": {
+            "B": { 
                 "wrengler": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "S4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "S3": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "T4X4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "D4X4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "ford150": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "dodge1500": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "defender": {
-                    "extra": combineExtras(commonExtras[2], commonExtras[7])
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
-                "David": {
-                    "extra": combineExtras(commonExtras[2], commonExtras[7], commonExtras[5])
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
                 },
                 "colorado4X4": {
-                    "extra": commonExtras[2]
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 }
             },
             "multi-C1": {
-                "extra": commonExtras[6],
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
                 "hammer": {
-                    "extra": commonExtras[9]
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf1": {
-                    "extra": combineExtras(commonExtras[7], commonExtras[8])
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf2": {
-                    "extra": commonExtras[7]
-                }
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
             },
             "cargo-C1": {
-                "extra": commonExtras[6]
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
             },
             "heavyCargo": {
-                "extra": commonExtras[10]
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
             },
             "bus": {
-                "extra": commonExtras[11]
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
             }
         },
-        "T4X4": {
+        "TLK": {
             "passangener": {
                 "auto": {
-                    "extra": combineExtras(commonExtras[0], commonExtras[1])
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
                 },
                 "menual": {
-                    "extra": commonExtras[2]
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
                 }
             },
-            "B": {
+            "B": { 
                 "wrengler": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "S4": {
-                    "extra": commonExtras[2]
-                },
-                "paj": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "S3": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "T4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "D4X4": {
-                    "extra": commonExtras[0]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "ford150": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "dodge1500": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "defender": {
-                    "extra": commonExtras[3]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
-                "David": {
-                    "extra": combineExtras(commonExtras[3], commonExtras[12], commonExtras[5])
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
                 },
                 "colorado4X4": {
-                    "extra": {
-                        "text": "מבחן שליטה בלבד"
-                    }
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 }
             },
             "multi-C1": {
-                "extra": commonExtras[6],
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
                 "hammer": {
-                    "extra": commonExtras[9]
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf1": {
-                    "extra": combineExtras(commonExtras[7], commonExtras[8])
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf2": {
-                    "extra": commonExtras[7]
-                }
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
             },
             "cargo-C1": {
-                "extra": commonExtras[6]
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
             },
             "heavyCargo": {
-                "extra": combineExtras(commonExtras[10], commonExtras[12])
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
             },
             "bus": {
-                "extra": commonExtras[11]
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
+            }
+        },
+        "rekston": {
+            "passangener": {
+                "auto": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
+                },
+                "menual": {
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
+                }
+            },
+            "B": { 
+                "wrengler": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S3": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "T4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "D4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "ford150": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "dodge1500": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "defender": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "colorado4X4": {
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                }
+            },
+            "multi-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
+                "hammer": {
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf1": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf2": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+            },
+            "cargo-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
+            },
+            "heavyCargo": {
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
+            },
+            "bus": {
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
+            }
+        },
+        "TH4X4": {
+            "passangener": {
+                "auto": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
+                },
+                "menual": {
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
+                }
+            },
+            "B": { 
+                "wrengler": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S3": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "T4X4": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "D4X4": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[0],  commonExtras[4]),
+                },
+                "ford150": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "dodge1500": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "defender": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "colorado4X4": {
+                   "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                }
+            },
+            "multi-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
+                "hammer": {
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf1": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf2": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+            },
+            "cargo-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
+            },
+            "heavyCargo": {
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
+            },
+            "bus": {
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
             }
         },
         "D4X4": {
             "passangener": {
                 "auto": {
-                    "extra": combineExtras(commonExtras[0], commonExtras[1])
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
                 },
                 "menual": {
-                    "extra": commonExtras[2]
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
                 }
             },
-            "B": {
+            "B": { 
                 "wrengler": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "S4": {
-                    "extra": commonExtras[2]
-                },
-                "paj": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "S3": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
                 },
                 "T4X4": {
-                    "extra": commonExtras[0]
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[0],  commonExtras[4]),
                 },
                 "ford150": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "dodge1500": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "defender": {
-                    "extra": commonExtras[3]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
-                "David": {
-                    "extra": combineExtras(commonExtras[3], commonExtras[12], commonExtras[5])
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
                 },
                 "colorado4X4": {
-                    "extra": {
-                        "text": "מבחן שליטה בלבד"
-                    }
+                   "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 }
             },
             "multi-C1": {
-                "extra": commonExtras[6],
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
                 "hammer": {
-                    "extra": commonExtras[9]
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf1": {
-                    "extra": combineExtras(commonExtras[7], commonExtras[8])
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf2": {
-                    "extra": commonExtras[7]
-                }
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
             },
             "cargo-C1": {
-                "extra": commonExtras[6]
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
             },
             "heavyCargo": {
-                "extra": combineExtras(commonExtras[10], commonExtras[12])
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
             },
             "bus": {
-                "extra": commonExtras[11]
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
+            }
+        },
+        "T4X4": {
+            "passangener": {
+                "auto": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
+                },
+                "menual": {
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
+                }
+            },
+            "B": { 
+                "wrengler": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S3": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "D4X4": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[0],  commonExtras[4]),
+                },
+                "ford150": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "dodge1500": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "defender": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "colorado4X4": {
+                   "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                }
+            },
+            "multi-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
+                "hammer": {
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf1": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf2": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+            },
+            "cargo-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
+            },
+            "heavyCargo": {
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
+            },
+            "bus": {
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
+            }          
+        },
+        "sunyang": {
+            "passangener": {
+                "auto": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
+                },
+                "menual": {
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
+                }
+            },
+            "B": { 
+                "wrengler": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S3": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "D4X4": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "T4X4": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[0],  commonExtras[4]),
+                },
+                "ford150": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "dodge1500": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "defender": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "colorado4X4": {
+                   "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                }
+            },
+            "multi-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
+                "hammer": {
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf1": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf2": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+            },
+            "cargo-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
+            },
+            "heavyCargo": {
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
+            },
+            "bus": {
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
+            }
+        },
+        "volkswagen": {
+            "passangener": {
+                "auto": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
+                },
+                "menual": {
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
+                }
+            },
+            "B": { 
+                "wrengler": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S3": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "T4X4": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "D4X4": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[0],  commonExtras[4]),
+                },
+                "ford150": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "dodge1500": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "defender": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "colorado4X4": {
+                   "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                }
+            },
+            "multi-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
+                "hammer": {
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf1": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf2": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+            },
+            "cargo-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
+            },
+            "heavyCargo": {
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
+            },
+            "bus": {
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
             }
         },
         "ford150": {
             "passangener": {
                 "auto": {
-                    "extra": combineExtras(commonExtras[0], commonExtras[1])
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
                 },
                 "menual": {
-                    "extra": commonExtras[2]
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
                 }
             },
-            "B": {
+            "B": { 
                 "wrengler": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "S4": {
-                    "extra": commonExtras[2]
-                },
-                "paj": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "S3": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "T4X4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "D4X4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "dodge1500": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "defender": {
-                    "extra": commonExtras[3]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
-                "David": {
-                    "extra": combineExtras(commonExtras[3], commonExtras[12], commonExtras[5])
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
                 },
                 "colorado4X4": {
-                    "extra": commonExtras[2]
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "text" :  `הכרת הרכב בלבד ומבחן שליטה למעט חייל בקבע/אע"צ הנדרשים בהכרת הרכב בלבד`,
                 }
             },
             "multi-C1": {
-                "extra": commonExtras[6],
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
                 "hammer": {
-                    "extra": commonExtras[9]
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf1": {
-                    "extra": combineExtras(commonExtras[7], commonExtras[8])
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf2": {
-                    "extra": commonExtras[7]
-                }
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
             },
             "cargo-C1": {
-                "extra": commonExtras[6]
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
             },
             "heavyCargo": {
-                "extra": combineExtras(commonExtras[10], commonExtras[12])
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
             },
             "bus": {
-                "extra": commonExtras[11]
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
             }
         },
         "dodge1500": {
             "passangener": {
                 "auto": {
-                    "extra": combineExtras(commonExtras[0], commonExtras[1])
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
                 },
                 "menual": {
-                    "extra": commonExtras[2]
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
                 }
             },
-            "B": {
+            "B": { 
                 "wrengler": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "S4": {
-                    "extra": commonExtras[2]
-                },
-                "paj": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "S3": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "T4X4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "D4X4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "ford150": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "defender": {
-                    "extra": commonExtras[3]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
-                "David": {
-                    "extra": combineExtras(commonExtras[3], commonExtras[12], commonExtras[5])
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
                 },
                 "colorado4X4": {
-                    "extra": commonExtras[2]
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 }
             },
             "multi-C1": {
-                "extra": commonExtras[6],
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
                 "hammer": {
-                    "extra": commonExtras[9]
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf1": {
-                    "extra": combineExtras(commonExtras[7], commonExtras[8])
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf2": {
-                    "extra": commonExtras[7]
-                }
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
             },
             "cargo-C1": {
-                "extra": commonExtras[6]
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
             },
             "heavyCargo": {
-                "extra": combineExtras(commonExtras[10], commonExtras[12])
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
             },
             "bus": {
-                "extra": commonExtras[11]
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
             }
         },
         "defender": {
             "passangener": {
-                "extra": combineExtras(commonExtras[0], commonExtras[1])
-            },
-            "B": {
-                "extra": commonExtras[2],
-                "David": {
-                    "extra": combineExtras(commonExtras[7], commonExtras[5])
-                }
-            },
-            "multi-C1": {
-                "extra": commonExtras[6],
-                "hammer": {
-                    "extra": commonExtras[9]
+                "auto": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
                 },
-                "wolf1": {
-                    "extra": combineExtras(commonExtras[7], commonExtras[8])
-                },
-                "wolf2": {
-                    "extra": commonExtras[7]
-                }
-            },
-            "cargo-C1": {
-                "extra": commonExtras[6]
-            },
-            "heavyCargo": {
-                "extra": combineExtras(commonExtras[10], commonExtras[12])
-            },
-            "bus": {
-                "extra": commonExtras[11]
-            }
-        },
-        "David": {
-            "passangener": {
-                "extra": combineExtras(commonExtras[0], commonExtras[1]),
                 "menual": {
                     "extra": {
-                        "text": "במידה וביצע הכשרה בעבר על דויד אוטומט יבצע שעת חניכה כביש יום"                        
+                        "text": "הכרת הרכב בלבד בתנאי שהדיפנדר ידני"
+                    } 
+                }
+            },
+            "B": { 
+                "wrengler": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S3": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "T4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "D4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "ford150": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "dodge1500": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "colorado4X4": {
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                }
+            },
+            "multi-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
                     }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
+                "hammer": {
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf1": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf2": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+            },
+            "cargo-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
+            },
+            "heavyCargo": {
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
+            },
+            "bus": {
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
+            }
+        },
+        "davidManual": {
+            "passangener": {
+                "auto": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
+                },
+                "menual": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    } 
                 }
             },
             "B": {
-                "extra": commonExtras[2]
-            },
-            "multi-C1": {
-                "extra": commonExtras[6],
-                "hammer": {
-                    "extra": commonExtras[9]
+                "wrengler": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
-                "wolf1": {
-                    "extra": combineExtras(commonExtras[7], commonExtras[8])
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
-                "wolf2": {
-                    "extra": commonExtras[7]
+                "S4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S3": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "T4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "D4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "ford150": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "dodge1500": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "defender": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                },
+                "colorado4X4": {
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 }
             },
+            "multi-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
+                "hammer": {
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf1": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf2": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+            },
             "cargo-C1": {
-                "extra": commonExtras[6]
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
             },
             "heavyCargo": {
-                "extra": combineExtras(commonExtras[10], commonExtras[12])
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
             },
             "bus": {
-                "extra": commonExtras[11]
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
             }
         },
         "colorado4X4": {
