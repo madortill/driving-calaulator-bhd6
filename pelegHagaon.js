@@ -14,8 +14,7 @@ let commonExtras = [
     },
     {
         //3
-        "text": "שעת חניכה בכביש יום",
-        genericSentences: [0, 1, 2, 4, 8]
+        genericSentences: [9]
     },
     {
         //4
@@ -664,10 +663,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
@@ -819,10 +818,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
@@ -974,10 +973,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
@@ -1129,10 +1128,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
@@ -1284,10 +1283,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
@@ -1439,10 +1438,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
@@ -1594,10 +1593,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
@@ -1749,10 +1748,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
@@ -1904,10 +1903,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
@@ -2059,10 +2058,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
@@ -2214,10 +2213,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
@@ -2369,10 +2368,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
@@ -2524,10 +2523,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
@@ -2679,10 +2678,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
@@ -2833,10 +2832,165 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidManual": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
+                },
+                "colorado4X4": {
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                }
+            },
+            "multi-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
+                "hammer": {
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf1": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf2": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+            },
+            "cargo-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
+            },
+            "heavyCargo": {
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
+            },
+            "bus": {
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
+            }
+        },
+        "davidAuto": {
+            "passangener": {
+                "auto": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
+                },
+                "menual": {
+                    "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
+                }
+            },
+            "B": {
+                "wrengler": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S3": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "T4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "D4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "ford150": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "dodge1500": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "defender": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "davidManual": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
@@ -2938,8 +3092,9 @@ let extras = {
                     }
                 },
                 "menual": {
-                    "extra": {
-                        "text": "הכרת הרכב בלבד"
+                   "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
                     } 
                 }
             },
@@ -2990,7 +3145,7 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "davidAuto": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4], commonExtras[5]),
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
                 },
                 "colorado4X4": {
                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
@@ -3087,85 +3242,311 @@ let extras = {
         "colorado4X4": {
             "passangener": {
                 "auto": {
-                    "extra": combineExtras(commonExtras[0], commonExtras[1])
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
                 },
                 "menual": {
-                    "extra": commonExtras[2]
+                   "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
                 }
             },
             "B": {
-                "extra": commonExtras[2],
-                "dodge1500": {
-                    "extra": {
-                        genericSentences: [1,8,0, 2, 4],
-                        "text": "שעת חניכה בכביש יום"           
-                    }
-                },
-                "defender": {
-                    "extra": {
-                        genericSentences: [1,3,8,0, 2, 4],
-                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבלנ"ם יבצע מבחן שליטה בלבד',
-                        "text": "שעת חניכה בכביש יום" 
-                    }
-                },
                 "wrengler": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "S4": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "S3": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "paj": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
-                "wrengler": {
-                    "extra": commonExtras[2]
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
                 },
                 "T4X4": {
-                    "extra": {
-                        "text": "מבחן שליטה בלבד"
-                    }
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
                 },
                 "D4X4": {
-                    "extra": {
-                        "text": "מבחן שליטה בלבד"
-                    }
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[0], commonExtras[4]),
                 },
                 "ford150": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "dodge1500": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "defender": {
-                    "extra": commonExtras[2]
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
-                "David": {
-                    "extra": commonExtras[2]
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
+                },
+                "davidManual": {
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
+                },
+                "silveradoB4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 }
             },
             "multi-C1": {
-                "extra": commonExtras[6],
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
                 "hammer": {
-                    "extra": commonExtras[9]
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf1": {
-                    "extra": combineExtras(commonExtras[7], commonExtras[8])
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
                 },
                 "wolf2": {
-                    "extra": commonExtras[7]
-                }
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
             },
             "cargo-C1": {
-                "extra": commonExtras[6]
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
             },
             "heavyCargo": {
-                "extra": combineExtras(commonExtras[10], commonExtras[12])
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
             },
             "bus": {
-                "extra": commonExtras[11]
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
+            }
+        },
+        "silveradoB4X4": {
+            "passangener": {
+                "auto": {
+                    "extra": {
+                        "text": "הכרת הרכב בלבד"
+                    }
+                },
+                "menual": {
+                   "extra": {
+                        genericSentences: [0, 1, 2, 5, 10],
+                        "text": "שעת חניכה בכביש יום"
+                    } 
+                }
+            },
+            "B": {
+                "wrengler": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rubikon": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "S3": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "paj": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "TLK" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "rekston" : {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "TH4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "T4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "D4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "sunyang": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                },
+                "volkswagen": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "ford150": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "dodge1500": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "defender": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                },
+                "davidAuto": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
+                },
+                "davidManual": {
+                   "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[3], commonExtras[5]),
+                },
+                "colorado4X4": {
+                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
+                }
+            },
+            "multi-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5,10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                },
+                "dodge3500": {
+                    "extra": {
+                        "text": "במידה ונדרשת לבצע הכשרה על דודג' 3500 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומבחן שליטה"
+                    }
+                },
+                "ford350": {
+                    "extra": {
+                        "text": 'במידה ונדרשת לבצע הכשרה על פורד F-350 אמבולנס לאחר החניכה יבוצע הכרת הרכב ומחבן שליטה'
+                    }
+                },
+                "hammer": {
+                    "extra": {
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס האמר מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf1": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"םיבצע מבחן שליטה בלבד'
+                    }
+                },
+                "wolf2": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס זאב מצבעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+                "tigris": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס טיגריס מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
+                    }
+                },
+            },
+            "cargo-C1": {
+                "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "5 שעות כביש (יום/לילה)",
+                }
+            },
+            "heavyCargo": {
+               "extra": {
+                     genericSentences: [0, 1, 2, 5, 10],
+                     "text": "40 שעות כביש (יום/לילה)",
+                },
+                "oosh": {
+                    "extra": {
+                        genericSentences: [9],
+                        "text": 'במידה ונדרשת לבצע הכשרה על אושקוש/מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד',
+                    }
+                },
+                "rio": {
+                    "extra": {
+                        genericSentences: [9],
+                    }
+                },
+                "tetra": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "FMTV": {
+                    "extra": {
+                          genericSentences: [9],
+                    }
+                },
+                "man+": {
+                    "extra": {
+                        genericSentences: [9],
+                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד',
+                    }
+                },
+            },
+            "bus": {
+                "extra": {
+                    genericSentences: [0, 1, 2, 5, 10],
+                    "text": "4 שעות כביש יום, שעה כביש לילה<br> במידה ונדרש לאחר ההכשרה לנהוג באוטובוס אחר יבצע הכרת הרכב בלבד"
+                }
             }
         }
     },
