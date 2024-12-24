@@ -275,12 +275,13 @@ let extras = {
             "passangener": {
                 "auto": {
                     "extra": {
+                        genericSentences: [10],
                         "text": "הכרת הרכב בלבד"
                     }
                 },
                 "menual": {
                     "extra": {
-                        genericSentences: [10],
+                        genericSentences: [0, 1, 2, 5, 10],
                         "text": "שעת חניכה בכביש יום"
                     }
                 }
