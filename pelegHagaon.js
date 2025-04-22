@@ -547,7 +547,7 @@ let extras = {
             },
             "cargo-C1": {
                 "extra": {
-                    genericSentences: [3, 10 ],
+                    genericSentences: [0,1,2,3,5, 10 ],
                     "text": "10 שעות כביש (יום/לילה)"
                 }
             },
@@ -557,50 +557,50 @@ let extras = {
                 },
                 "oosh": {
                     "extra": {
-                        genericSentences: [9,11],
+                        genericSentences: [0,1,2,3,5,9,11],
                         "text": 'במידה ונדרשת לבצע הכשרה על אושקוש מנוף/סולר/מים לאחר ההכשרה יש לבצע הכרת הרכב בלבד <br> 39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)',
                     }
                 },
                 "rio": {
                     "extra": {
-                        genericSentences: [9,11],
+                        genericSentences: [0,1,2,3,5,9,11],
                          "text": "39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)"
                     }
                 },
                 "tetra": {
                     "extra": {
-                          genericSentences: [9,11],
+                          genericSentences: [0,1,2,3,5,9,11],
                          "text": "39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)"
                     }
                 },
                 "FMTV": {
                     "extra": {
-                          genericSentences: [9,11],
+                          genericSentences: [0,1,2,3,5,9,11],
                          "text": "39 שעות כביש (יום/לילה), שעת שטח (יום/לילה)"
                     }
                 },
                 "truk": {
                     "extra": {
-                         genericSentences: [10],
+                         genericSentences: [0,1,2,3,5,10],
                          "text": "40 שעות כביש (יום/לילה)"
                     }
                 },
                 "dragger": {
                     "extra": {
-                          genericSentences: [10],
+                          genericSentences: [0,1,2,3,5,10],
                          "text": "40 שעות כביש (יום/לילה)"
                     }
                 },
                 "man+": {
                     "extra": {
-                        genericSentences: [9,11],
+                        genericSentences: [0,1,2,3,5,9,11],
                          "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד <br> 40 שעות כביש (יום/לילה)',
                     }
                 },
             },
             "bus": {
                 "extra": {
-                    genericSentences: [3, 10],
+                    genericSentences: [0,1,2,3,5, 10],
                     "text": "4 שעות כביש יום, שעת כביש לילה<br> במידה ונדרש לנהוג על אוטובוס אחר תבוצע הכרת הרכב בלבד"
                 }
             }
