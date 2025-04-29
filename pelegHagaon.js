@@ -458,7 +458,7 @@ let extras = {
             },
             "B": {
                 "extra": {
-                    genericSentences: [3, 11],
+                    genericSentences: [0,1,2,3,5, 11],
                     "text": "6 שעות כביש (יום/לילה), שעה שטח (יום/לילה)"
                 },
                 "TH4X4": {
@@ -489,13 +489,13 @@ let extras = {
                 "davidAuto": {
                     "extra": {
                         genericSentences: [9],
-                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבלנ"ם יבצע מבחן שליטה בלבד'
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
                     }
                 },
                 "davidManual": {
                     "extra": {
                         genericSentences: [9],
-                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד בבלנ"ם יבצע מבחן שליטה בלבד'
+                        "text": 'במידה ונהג לוחם/בט"ש עבר קורס דויד מבצעי בבא"פ/בבלנ"ם יבצע מבחן שליטה בלבד'
                     }
                 },
                 "colorado4X4": {
@@ -2534,7 +2534,10 @@ let extras = {
                    "extra" :  combineExtras(commonExtras[1], commonExtras[2], commonExtras[4]),
                 },
                 "silveradoB4X4": {
-                    "text" :  `הכרת הרכב בלבד ומבחן שליטה למעט חייל בקבע/אע"צ הנדרשים בהכרת הרכב בלבד`,
+                    "extra": {
+                        "text" :  `הכרת הרכב בלבד ומבחן שליטה למעט חייל בקבע/אע"צ הנדרשים בהכרת הרכב בלבד`
+                    }
+                    
                 }
             },
             "multi-C1": {
@@ -4502,7 +4505,10 @@ let extras = {
             },
             "cargo-C1": {
                 "fordInter": {
-                    "text": "הכרת הרכב ומבחן שליטה"
+                    "extra": {
+                        "text": "הכרת הרכב ומבחן שליטה"
+                    }
+                    
                 },
                 "man": {
                     "extra": combineExtras(commonExtras[1], commonExtras[2])
