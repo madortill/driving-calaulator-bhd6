@@ -2943,8 +2943,10 @@ let extras = {
                 },
                 "menual": {
                     "extra": {
-                        genericSentences: [0, 1, 2, 5, 10],
-                        "text": "שעת חניכה בכביש יום"
+                        // genericSentences: [0, 1, 2, 5, 10],
+                        // "text": "שעת חניכה בכביש יום"
+                        "text": "הכרת הרכב בלבד"
+
                     } 
                 }
             },
