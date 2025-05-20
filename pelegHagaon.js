@@ -248,21 +248,17 @@ let extras = {
                         genericSentences: [10],
                     }
                 },
+                                "dragger": {
+                    "extra": {
+                        genericSentences: [10],
+                    }
+                },
                 "man+": {
                     "extra": {
                         genericSentences: [9,11],
                         "text": 'במידה ונהג לוחם/בט"ש עבר קורס פנתר מבצעי בבא"פ/בלנ"ם יבצע מבחן שליטה בלבד'
                     }
                 },
-                "dragger ": {
-                    "extra": {
-                        genericSentences: [10],
-                        "text": ' שעת חניכה תהיה לפחות 50 ק"מ'
-                        
-                 
-                    }
-                },
-                
             },
             "bus": {
                 "extra": {
