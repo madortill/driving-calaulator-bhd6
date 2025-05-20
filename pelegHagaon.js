@@ -256,7 +256,9 @@ let extras = {
                 },
                 "dragger ": {
                     "extra": {
-                        genericSentences: [10,11],
+                        genericSentences: [10],
+                        "text": ' שעת חניכה תהיה לפחות 50 ק"מ'
+                        
                  
                     }
                 },
