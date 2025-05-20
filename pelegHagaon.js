@@ -282,7 +282,7 @@ let extras = {
             "passangener": {
                 "auto": {
                     "extra": {
-                        genericSentences: [10],
+                      
                         "text": "הכרת הרכב בלבד"
                     }
                 },
