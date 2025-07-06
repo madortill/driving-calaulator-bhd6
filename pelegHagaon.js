@@ -3454,7 +3454,10 @@ let extras = {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
                 },
                 "ford150": {
-                    "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                    // "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
+                    "extra": {
+                        "text" :  `הכרת הרכב בלבד ומבחן שליטה למעט חייל בקבע/אע"צ הנדרשים בהכרת הרכב בלבד`
+                    }
                 },
                 "dodge1500": {
                     "extra" :  combineExtras(commonExtras[1], commonExtras[2]),
